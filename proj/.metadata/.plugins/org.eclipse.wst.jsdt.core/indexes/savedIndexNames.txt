@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+/Users/gayeong/Desktop/0. web-workspace/project_management/proj/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+4143688772.index

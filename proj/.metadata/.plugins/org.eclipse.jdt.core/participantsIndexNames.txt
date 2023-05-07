@@ -1,0 +1,3 @@
+INDEX VERSION 1.132
+/Users/gayeong/Desktop/0. web-workspace/project_management/proj/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/481392109.index
+/proj/src/main/resources

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="proj">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/work/Catalina/localhost/ROOT"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/proj/src/main/java"/>
+        <property name="context-root" value="proj"/>
+        <property name="java-output-path" value="/proj/bin"/>
+    </wb-module>
+</project-modules>

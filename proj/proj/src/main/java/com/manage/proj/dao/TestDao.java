@@ -19,10 +19,13 @@ public class TestDao {
 		ArrayList<Object> queryResult = new ArrayList<Object>();
 		HashMap<String, Object> result = new HashMap<String, Object>();
 		
-		queryResult = (ArrayList<Object>) sqlSession.selectList("test.selDualTable", dataMap);
+		queryResult = (ArrayList<Object>) sqlSession.selectList("selectTest.kosta", dataMap);
 		System.out.println("queryResult : " + queryResult.toString());
 		
-		result.put("result", queryResult.get(0).toString());
+		//Object rs = sqlSession.selectList("selectTest.kosta", dataMap);
+		//System.out.println("rs : " + rs.toString());
+		
+		result.put("result", queryResult);
 		
 //		return (HashMap<String, Object>) sqlSession.selectList("login.selectLoginInfo", dataMap);
 		return result;

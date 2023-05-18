@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
 import Home from './pages/book/Home';
 import Container, { Link, Switch } from '@material-ui/core';
 import clsx from 'clsx';
+import ConnTest from './pages/test/connection';
 
 
 function App() {
@@ -31,21 +32,17 @@ function App() {
         </a>
       </header>
       
-      <body>
-	      <div>
-	      	<h1>????</h1>
-	      </div>
-	      
-	      <div>
-  			<h1>please...</h1>
-    		<Routes>
-				
-					<Route exact path="/user/login" Component={LoginForm} />
-				
+      <div>
+      	<h1>????</h1>
+      </div>
+      
+      <div>
+		<h1>please...</h1>
+			<Routes>
+				<Route exact path="/user/login" Component={LoginForm} />
+				<Route exact path="test/conn" Component={ConnTest} />
 			</Routes>	
-    	
-   		 </div>
-      </body>
+    	</div>
       
       
     </div>

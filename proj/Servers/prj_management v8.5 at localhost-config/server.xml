@@ -36,6 +36,24 @@
     <!-- Editable user database that can also be used by
          UserDatabaseRealm to authenticate users
     -->
+    
+    <!-- gayeong 추가 -->
+    <Resource auth="Container"
+    			driverClassName="oracle.jdbc.OracleDriver"
+    			maxActive="20"
+    			maxIdle="20"
+    			maxWait="5000"
+    			minIdle="2"
+    			name="jdbc/p_manage"
+    			password="kosta_admin"
+    			type="javax.sql.DataSource"
+    			url="jdbc:oracle:thin:@localhost:1521:xe"
+    			username="kosta_admin"
+    			validationQuery="select 1 from dual"
+    			alidationQueryTimeout="30"
+    			/>
+    			
+    
     <Resource auth="Container" description="User database that can be updated and saved" factory="org.apache.catalina.users.MemoryUserDatabaseFactory" name="UserDatabase" pathname="conf/tomcat-users.xml" type="org.apache.catalina.UserDatabase"/>
   </GlobalNamingResources>
 
@@ -153,7 +171,7 @@
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 		
 	    <Context docBase="proj" path="/" reloadable="true" source="org.eclipse.jst.j2ee.server:proj">
-	      <Resource  name="jdbc/p_manage" auth="Container" type="javax.sql.DataSource" maxTotal="8" maxIdle="30" maxWaitMillis="-1" username="kosta_admin" password="kosta_admin" driverClassName="com.oracle.jdbc.OracleDriver" url="jdbc:oracle:thin:@localhost:1521:xe"/>
+	      <!-- <Resource auth="Container" driverClassName="com.oracle.jdbc.OracleDriver" maxIdle="30" maxTotal="8" maxWaitMillis="-1" name="jdbc/p_manage" password="kosta_admin" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="kosta_admin"/> -->
 	    </Context>
       </Host>
     </Engine>

@@ -20,16 +20,16 @@
 	http://www.springframework.org/schema/jee/spring-jee-4.0.xsd">
 
 	<jndi:jndi-lookup jndi-name="jdbc/p_manage" resource-ref="true"
-		id="dataSourceNm" />
+		id="dataSource" />
 	
 	<bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager" >
-		<property name="dataSource" ref="dataSourceNm" />
+		<property name="dataSource" ref="dataSource" />
 	</bean>
 
 	<tx:annotation-driven transaction-manager="txManager" />
 
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-    	<property name="dataSource" ref="dataSourceNm" />
+    	<property name="dataSource" ref="dataSource" />
     	<property name="configLocation" value="WEB-INF/config/mybatisConfig.xml" />
      	<property name="mapperLocations" value="classpath:sql/*.xml"/>
  	</bean>  
@@ -46,4 +46,5 @@
 		<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
 		</mvc:message-converters>
 	</mvc:annotation-driven>
+
 </beans>

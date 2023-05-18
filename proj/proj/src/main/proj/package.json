@@ -42,5 +42,8 @@
     ]
   },
   "proxy": "http://localhost:8080",
-  "module": "dist/clsx.js"
+  "module": "dist/clsx.js",
+  "devDependencies": {
+    "@vue/cli-plugin-router": "~5.0.0"
+  }
 }

@@ -28,6 +28,6 @@
 		
 	<task:scheduler id="pScheduler" pool-size="10" />
 	<task:executor id="pTaskExecutor" pool-size="10" />
-	<task:annotation-driven executor="pTaskExecutor" scheduler="pScheduler" /> 
+	<task:annotation-driven executor="pTaskExecutor" scheduler="pScheduler" />
 	
 </beans:beans>

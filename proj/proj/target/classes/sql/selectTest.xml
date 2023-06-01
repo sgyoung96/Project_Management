@@ -6,7 +6,7 @@
 <mapper namespace="selectTest">
 	
 	<select id="kosta" parameterType="paramMap" resultType="resultMap">
-		SELECT 'TEST' AS TEST FROM DUAL
+		SELECT * FROM MEMBER
 	</select>
 	     
 </mapper>
